@@ -1,0 +1,58 @@
+{
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "redhat.telemetry.enabled": true,
+    "http.proxy": "socks5://192.168.9.132:7890",
+    "keyboard.dispatch": "keyCode",
+    // Go
+    "go.testTimeout": "300s",
+    // VIM
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "m"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        
+
+
+        {
+            "before": [
+                "<leader>",
+                "s",
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    }
+}
