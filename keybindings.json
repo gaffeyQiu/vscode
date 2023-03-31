@@ -61,12 +61,28 @@
         "when": "terminal.active"
     },
     {
-        "key": "alt+l",
+        "key": "ctrl+l",
         "command": "extension.vim_ctrl+pagedown"
     },
     {
-        "key": "alt+h",
+        "key": "ctrl+h",
         "command": "extension.vim_ctrl+pageup"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.navigateUp"
     },
     {
         "key": "F2",
@@ -75,5 +91,15 @@
     {
         "key": "ctrl+shift+c",
         "command": "editor.action.clipboardCopyAction"
-    }
+    },
+    {
+        "key": "F3",
+        "command": "code-runner.run"
+    },
+    { "key": "ctrl+d", "command": "editor.action.peekDefinition" },
+    {
+      "key": "ctrl+d",
+      "command": "editor.closeTestPeek",
+      "when": "testing.isInPeek && !config.editor.stablePeek || testing.isPeekVisible && !config.editor.stablePeek"
+    },
 ]
