@@ -1,143 +1,123 @@
 {
-    "files.autoSave": "afterDelay",
-    "git.autofetch": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "redhat.telemetry.enabled": true,
-    // "http.proxy": "socks5://127.0.0.1:7890",
-    "keyboard.dispatch": "keyCode",
-    // Go
-    "go.inferGopath": true,
-    "go.autocompleteUnimportedPackages": true,
-    "go.testTimeout": "300s",
-    "go.lintTool": "golangci-lint",
-    "go.lintFlags": [],
-    // VIM
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.defaultIM": "1033",
-    "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\Users\\admin\\Desktop\\im-select.exe",
-    "vim.autoSwitchInputMethod.switchIMCmd": "C:\\Users\\admin\\Desktop\\im-select.exe {im}",
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "m"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
-        },
-        {
-            "before": [
-                "g",
-                "i"
-            ],
-            "commands": [
-                "editor.action.goToImplementation"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "s"
-            ],
-            "after": [
-                "<leader>",
-                "<leader>",
-                "s"
-            ]
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-c>": false,
-        "<C-d>": false,
-        "<C-x>": false,
-        "<C-v>": false,
-        "<C-f>": false
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  // "http.proxy": "socks5://127.0.0.1:7890",
+  "keyboard.dispatch": "keyCode",
+  // Go
+  "go.inferGopath": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.testTimeout": "300s",
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [],
+  // VIM
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "1033",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\Users\\admin\\Desktop\\im-select.exe",
+  "vim.autoSwitchInputMethod.switchIMCmd": "C:\\Users\\admin\\Desktop\\im-select.exe {im}",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "f", "m"],
+      "commands": ["editor.action.formatDocument"]
     },
-    "editor.formatOnSave": true,
-    "editor.fontFamily": "'FiraCode Nerd Font Retina', '微软雅黑', 'Droid Sans Mono', 'monospace', monospace",
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Atom One Dark",
-    // 函数注释
-    "fileheader.cursorMode": {
-        "@description": "", // 函数注释生成之后，光标移动到这里
-        "@author": "     邱佳飞", // param 开启函数参数自动提取 需要将光标放在函数行或者函数上方的空白行
-        "@datetime": "   ${now_year}"
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
     },
-    "fileheader.configObj": {
-        "autoAdd": false,
-        "language": {
-            "go": {
-                "head": "// ",
-                "middle": "// ",
-                "end": "// "
-            }
-        }
-    },
-    "github.copilot.advanced": {},
-    "editor.inlineSuggest.enabled": true,
-    "gitlens.defaultDateLocale": null,
-    "gitlens.defaultDateShortFormat": null,
-    "gitlens.defaultDateFormat": null,
-    "gitlens.defaultTimeFormat": null,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": false,
-        "markdown": true
-    },
-    "settingsSync.ignoredExtensions": [
-        "johnstoncode.svn-scm"
-    ],
-    "cSpell.userWords": [
-        "aaagame",
-        "autofetch",
-        "cfgs",
-        "datetime",
-        "easymotion",
-        "exportjson",
-        "Fatcat",
-        "fcitx",
-        "fileheader",
-        "Fira",
-        "fyne",
-        "golangci",
-        "Gopath",
-        "hlsearch",
-        "incsearch",
-        "Infof",
-        "pagedown",
-        "pageup",
-        "Pinia",
-        "Tabbar",
-        "Unimported",
-        "vant",
-        "Windi"
-    ],
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14,
-    "[vue]": {
-        "editor.defaultFormatter": "Vue.volar"
-    },
-    "projectManager.tags": [
-        "Personal",
-        "Work",
-        "Test"
-    ],
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "todohighlight.isEnable": false,
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "s"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-d>": false,
+    "<C-x>": false,
+    "<C-v>": false,
+    "<C-f>": false
+  },
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'FiraCode Nerd Font Retina', '微软雅黑', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Theme (Italic)",
+  // 函数注释
+  "fileheader.cursorMode": {
+    "@description": "", // 函数注释生成之后，光标移动到这里
+    "@author": "     邱佳飞", // param 开启函数参数自动提取 需要将光标放在函数行或者函数上方的空白行
+    "@datetime": "   ${now_year}"
+  },
+  "fileheader.configObj": {
+    "autoAdd": false,
+    "language": {
+      "go": {
+        "head": "// ",
+        "middle": "// ",
+        "end": "// "
+      }
+    }
+  },
+  "github.copilot.advanced": {},
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "gitlens.defaultDateLocale": null,
+  "gitlens.defaultDateShortFormat": null,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultTimeFormat": null,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "settingsSync.ignoredExtensions": ["johnstoncode.svn-scm"],
+  "cSpell.userWords": [
+    "aaagame",
+    "autofetch",
+    "cfgs",
+    "datetime",
+    "easymotion",
+    "exportjson",
+    "Fatcat",
+    "fcitx",
+    "fileheader",
+    "Fira",
+    "fyne",
+    "golangci",
+    "Gopath",
+    "hlsearch",
+    "incsearch",
+    "Infof",
+    "pagedown",
+    "pageup",
+    "Pinia",
+    "Tabbar",
+    "Unimported",
+    "vant",
+    "Windi"
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "projectManager.tags": ["Personal", "Work", "Test"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todohighlight.isEnable": false,
+  "[proto3]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  }
 }
